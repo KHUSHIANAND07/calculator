@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(to right, #688197, #49eaf3, pink);
+}
+.container {
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  max-width: 500px;
+  max-height: 1000px;
+  padding: 25px;
+  border-radius: 100px;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+}
+.container:hover {
+  transform: scale(1.3);
+  background-color: rgb(250, 235, 238);
+  border: 3px solid #6A1B9A;
+  box-shadow: 0 4px 12px rgba(38, 1, 42, 0.5);
+}
+
+h1 {
+  font-size: 39px;
+  color: #f70818;
+  font-weight: 1000;
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  animation: upDownMotion 2s infinite ease-in-out;
+}
+@keyframes upDownMotion {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+h1:hover {
+  color: #0a7ccd;
+}
+.highlight {
+  background-color: rgb(239, 232, 13);
+  font-weight: bolder;
+}
+input,
+select,
+button {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid #137dc9;
+  margin-bottom: 20px;
+  box-sizing: border-box; /* Ensures that padding doesn't affect the width */
+}
+button {
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+  border-radius: 35px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+button:hover {
+  background-color: #ec4b0c;
+  transform: scale(1.05);
+}
+#result {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+button#diet-plan-btn {
+  background-color: #007bff;
+  font-size: 1.2em;
+  padding: 15px;
+}
+button#diet-plan-btn:hover {
+  background-color: #0056b3;
+}
